@@ -14,3 +14,4 @@ public class SpringDocConfig {
     return new OpenAPI().info(new Info().title("Spring Doc").version("1.0.0").description("Swagger example"));
     }
 }
+//fixme how to insert method tags in this config file?
