@@ -4,9 +4,9 @@ import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
+import io.swagger.v3.oas.models.tags.Tag;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.yaml.snakeyaml.nodes.Tag;
 
 import java.util.List;
 
@@ -22,7 +22,6 @@ public class SpringDocConfig {
                             .name("Alessio Limina")
                             .email("alessio.limina@gmail.com")
                             .url("https://www.develhope.co")))
-                    .tags(List.of())
+                    .tags(List.of(new Tag().name("name controller").description("This controller returns the user's name")));
     }
 }
-//fixme how to insert method tags in this config file?
